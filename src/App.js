@@ -1,17 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
-import './components/products/product/productCard'
-import ProductCard from './components/products/product/productCard';
+import Toolbar from './components/Navigation/Toolbar/Toolbar';
+import Header from './components/Header/Header';
+import Navbar from './components/Navbar/Navbar';
+import Products from './components/Products/Products'
+import Footer from './components/Footer/Footer';
 
 function App() {
   return (
     <div className="App">
-      <header >
-     
-      </header>
-      
-        <ProductCard/>
+      <Header/>
+      <Navbar/>
+      <Products/>
+      <Footer/>
       
     </div>
   );
