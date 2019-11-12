@@ -1,6 +1,5 @@
 import React from 'react';
 
-import classes from './productCard.css';
 
 const productCard = (props) => {
     const style = {
@@ -16,7 +15,5 @@ const productCard = (props) => {
         </div>
     )
 }
-
-
 
 export default productCard;
