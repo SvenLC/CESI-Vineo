@@ -1,10 +1,58 @@
-.header {
-    height: 100px;
-    width: auto;
-    box-shadow: 0px 0px 5px 5px grey;
-    margin: 10px;
+.entete {
+    /* background: #eee; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.topRight {
+    display: flex;
+    justify-content: right;
 }
 
-.link {
+.inputText {
+    border-radius: 0.5rem;
+    height: 2rem;
+}
+
+.bouton {
+    display: block;
+    padding: 1rem;
+    margin: 10px;
+    
+    /* background: #aaa; */
+}
+
+.fav {
+    background: url("../../assets/images/icons/fav.svg") 10% 50% no-repeat;
     text-decoration: none;
+    color: inherit;
+}
+.cart {
+    background: url("../../assets/images/icons/cart.svg") 10% 50% no-repeat;
+}
+.cont {
+    background: url("../../assets/images/icons/contact.svg") 10% 50% no-repeat;
+}
+.log {
+    background: url("../../assets/images/icons/arrow.svg") 10% 50% no-repeat;
+    transition: 0.5s; 
+    background-position-x: 0px;
+}
+
+.log:hover {
+    background-position-x: 10px;
+    cursor: pointer;
+}
+
+.fav, .cart, .cont, .log {
+    background-size: 2rem;
+    padding-left: 50px;
+}
+.fav:hover, .cart:hover, .cont:hover, .log:hover {
+    box-shadow: 0px 0px 3px #000;
+}
+
+.fav, .cart, .cont {
+    background-size: 2rem;
+    line-height : 4rem;
 }
