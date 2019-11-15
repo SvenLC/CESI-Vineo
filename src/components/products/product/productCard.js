@@ -6,7 +6,7 @@ import styles from './ProductCard.module.css';
 const productCard = (props) => {
     return (
         <div className={styles.Card}>
-            Vin
+            <h1 className={styles.H1}>Vin</h1>
         </div>
     )
 }
