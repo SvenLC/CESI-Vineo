@@ -1,0 +1,155 @@
+/* Div contenant le texte devant la bannière */
+
+.accroche {
+    /* background-image: url("../images/bandeauVignobleTransparent02.png"); */
+    color: #442f0e;
+}
+
+/* Texte principal */
+
+.accroche1 {
+    padding-top: 30px;
+    text-align: center;
+    font-weight: bolder;
+    text-shadow: #351d05 0.1em 0.1em 0.2em;
+}
+
+/* Texte secondaire */
+
+.accroche2 {
+    margin: auto;
+    width: 66%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+/* Zone dessin */
+
+.explication {
+    text-align: center;
+}
+
+/* Dessin */
+
+.schema {
+    width: 800px;
+    height: auto;
+}
+
+/* "Ils travaillent avec nous" */
+
+.partenaires {
+    padding-top: 40px;
+    text-align: center;
+    font-size: 200%;
+    font-style: italic;
+    font-weight: bold;
+    padding-bottom: 40px;
+    color: #A4834F;
+}
+
+.blocGlobalRestProd {
+    display: flex;
+}
+
+/* "Restaurateurs" */
+
+.restaurateurs {
+    padding-top: 20px;
+    font-size: 120%;
+    float: left;
+    text-align: center;
+    font-weight: bold;
+    color: #A4834F;
+    border: 1px solid #CDAE7F;
+    border-radius: 5px;
+    margin-right:0.25em;
+}
+
+/* "Producteurs" */
+
+.producteurs {
+    padding-top: 20px;
+    font-size: 120%;
+    float: right;
+    text-align: center;
+    font-weight: bold;
+    color: #A4834F;
+    border: 1px solid #CDAE7F;
+    border-radius: 5px;
+}
+
+/* Espacement */
+
+.br {
+    margin-top: 20px;
+}
+
+.blocPhotoPrenom {
+    display: flex;
+}
+
+/* Photos des partenaires */
+
+.portraits {
+    padding-top: 40px;
+    padding-left: 10px;
+    padding-right: 10px;
+    width: 90%;
+    height: auto;
+}
+
+.vertical {
+    display: flex;
+    flex-direction: column;
+}
+
+.atouts {
+    padding:40px 0px;
+    text-align: center;
+}
+
+.noFlex {
+    clear: both;
+}
+
+/* FORMULAIRE */
+
+.container {
+    clear: both;
+    padding: 10px 10px 10px 30px ;
+    height: 325px;
+    width: 300px;
+    background-color: black;
+    color: white;
+    margin : auto;
+    
+}
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.container input {
+    margin: 5px;
+    padding: 10px 10px 10px 10px ;
+}
+
+h2 {
+    font-size: 1.2rem;
+}
+
+.button {
+   
+    margin:10px 40px 10px 30px ;
+    float : right;
+    height: 30px;
+    /*width: 30px;*/
+    background-color: #CDAE7F;
+    text-align: center;
+   
+}

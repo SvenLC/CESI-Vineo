@@ -24,35 +24,32 @@ class Login extends Component {
     }
 
     resetState = () => {
-        this.setState({login: ''}, {password: ''},{link: false})
+        this.setState({ login: '' }, { password: '' }, { link: false })
     }
 
     connection = () => {
-        console.log(this.state.login + ' ' + this.state.password)
-        console.log(this.state.link)
         if (this.state.login == 'producteur' && this.state.password == 'test') {
             this.setState({ link: 'producer' })
         }
-        if (this.state.login == 'client' && this.state.password == 'test') {
+        else if (this.state.login == 'client' && this.state.password == 'test') {
             this.setState({ link: 'customer' })
         }
-        if (!this.state.link) {
+        else {
             this.setState({ link: 'error' })
         }
     }
 
     render() {
+        let error;
         if (this.state.link == 'producer') {
             return <Redirect to='/producer' />
         }
         if (this.state.link == 'customer') {
             return <Redirect to='/customer' />
         }
-        let error;
         if (this.state.link) {
             error =
                 <p className={styles.error}>Votre login ou votre mots de passe est incorrect</p>
-
         }
         return (
             <div className={styles.loginContainer}>

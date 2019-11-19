@@ -1,12 +1,15 @@
 import React, { Component } from 'react'
 
-import { Redirect } from 'react-router-dom'
+
 
 import { Link } from 'react-router-dom';
 
-import Modal from '../UI/Modal/Modal';
-import Backdrop from '../UI/Backdrop/Backdrop';
-import Login from '../Login/Login';
+import styles from './Home.module.css';
+import schema from '../../assets/images/schema.jpg'
+import vineoRestaurateur01 from '../../assets/images/vineoRestaurateur01.jpg'
+import vineoRestaurateur02 from '../../assets/images/vineoRestaurateur02.jpg'
+import vineoProducteur01 from '../../assets/images/vineoProducteur01.jpg'
+import vineoProducteur02 from '../../assets/images/vineoProducteur02.jpg'
 
 class Home extends Component {
     constructor(props) {
@@ -40,15 +43,71 @@ class Home extends Component {
     render() {
 
         return (
-            <div>
-
-                <Link to='/Producer'><p>Producteur</p></Link>
-                <Link to='/Customer'><p>Client</p></Link>
-                <button onClick={this.openModal}>modal</button>
-                <Modal show={this.state.modal} modalClosed={this.cancelLogin}>
-                    <Login connection={this.connection} />
-                </Modal>
-
+            <div className={styles.article}>
+                <div className={styles.accroche}>
+                    <div className={styles.accroche1}>
+                        <h1>LE LIEN DU RESTAURATEUR AU PRODUCTEUR</h1>
+                    </div>
+                    <div classNamee={styles.accroche2}>
+                        Professionnels de la restauration, achetez votre vin auprès des meilleurs producteurs,
+                        et bénéficiez de conseils avisés d'experts.
+                        Producteurs, vendez vos vins à votre convenance à un vaste réseau de restaurateurs.
+                    </div>
+                </div>
+                <div className={styles.explication}>
+                    <img class={styles.schema} src={schema} />
+                </div>
+                <div className={styles.partenaires}>
+                    Ils travaillent avec nous
+                </div>
+                <div className={styles.blocGlobalRestProd}>
+                    <div>
+                        <div className={styles.restaurateurs}>
+                            <div>RESTAURATEURS</div>
+                            <div className={styles.blocPhotoPrenom}>
+                                <div className={styles.vertical}>
+                                    <img className={styles.portraits} src={vineoRestaurateur01} />
+                                    Philippe
+                        </div>
+                                <div className={styles.vertical}>
+                                    <img className={styles.portraits} src={vineoRestaurateur02} />
+                                    Gordon
+                        </div>
+                            </div>
+                            <div className={styles.atouts}>
+                                <div className={styles.br}>ATOUTS POUR LES RESTAURATEURS</div>
+                                <div className={styles.br}>Soyez fier de votre carte des vins</div>
+                                <div className={styles.br}>Différenciez vous de la concurrence en</div>
+                                <div>découvrant 800 vignerons récoltants</div>
+                                <div className={styles.br}>Bénéficiez d’un accompagnement personnalisé</div>
+                                <div>dans la construction de votre carte</div>
+                                <div className={styles.br}>Gagnez du temps avec un interlocuteur unique,</div>
+                                <div>de la commande à la facturation</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.producteurs}>
+                        <div>PRODUCTEURS</div>
+                        <div className={styles.blocPhotoPrenom}>
+                            <div className={styles.vertical}>
+                                <img className={styles.portraits} src={vineoProducteur01} />
+                                Gerard
+                    </div>
+                            <div className={styles.vertical}>
+                                <img className={styles.portraits} src={vineoProducteur02} />
+                                Pierre
+                    </div>
+                        </div>
+                        <div className={styles.atouts}>
+                            <div className={styles.br}>ATOUTS PRODUCTEURS</div>
+                            <div className={styles.br}>Travaillez avec de grands restaurants</div>
+                            <div className={styles.br}>Gérez de façon flexible vos stocks</div>
+                            <div className={styles.br}>Valorisez vos produits à votre convenance</div>
+                            <div className={styles.br}>Améliorez votre réseau et</div>
+                            <div>votre réputation</div>
+                        </div>
+                    </div>
+                </div>
             </div>
         )
     }
