@@ -1,0 +1,30 @@
+.container {
+    padding: 10px;
+    background-color: black;
+    color: white;
+}
+
+.container input {
+    padding: 10px 10px 10px 10px;
+}
+
+h2 {
+    margin-top: 0;
+    padding-top: 10px;
+    font-size: 1.2rem;
+}
+
+.block {
+    display: block;
+    padding: 0.5rem;
+}
+
+
+.divButton {
+    text-align: right;
+}
+
+.button {
+    margin: 10px 40px 10px 30px;
+    background-color: #CDAE7F;
+}
