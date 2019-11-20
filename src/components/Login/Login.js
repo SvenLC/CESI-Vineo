@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import { Redirect } from 'react-router-dom'
 
 import styles from './Login.module.css';
-import Producer from '../Producer/Producer';
 
 class Login extends Component {
     constructor(props) {

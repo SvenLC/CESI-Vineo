@@ -14,7 +14,7 @@
 }
 
 .inputText {
-    border-radius: 0.5rem;
+    /* border-radius: 0.5rem; */
     height: 2rem;
 }
 
@@ -70,3 +70,7 @@
     padding-bottom: 50px;
     box-shadow: 0px 0px 3px #000;
   }
+
+  .accueil {
+    height: 100%;
+}

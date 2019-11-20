@@ -12,7 +12,6 @@ class Customer extends Component {
     return (
       <Fragment>
         <Header />
-        {/* <Navbar /> */}
         <Products />
         <Footer />
       </Fragment>
