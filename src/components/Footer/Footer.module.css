@@ -1,5 +1,70 @@
-Footer {
-    box-shadow: 0px 0px 5px 5px grey;
-    margin: 10px;
-    height: 50px;
+.piedDePage {
+    position: relative;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    padding: 10px 100px 10px 100px ;
+    margin-top: 30px;
+    background-color: #000;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
 }
+.piedDePage a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+.piedDePage a:hover {
+    opacity: 0.5;
+}
+
+/* .container b {
+    padding: 20px 20px 200px 20px ;
+    margin: 10px 10px 30px 220px; 
+}*/
+
+.b-abus {
+    padding: 20px 20px 200px 20px ;
+    margin: 10px 10px 10px 220px;
+}
+
+.piedDePage img {
+    padding: 20px 20px 10px 20px;
+    margin: 10px 10px 10px 100px;
+}
+
+.piedDePage nav{
+    padding: 10px 10px 10px 10px ;
+    margin: auto;
+    text-align: center;
+}
+
+.crumbs ol {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.li-menu a {
+    color: white;
+}
+
+li {
+    float: left;
+    display: block; /* Liens deviennent des blocs + Retirer les puces */
+    margin: 5px;
+}
+
+.li-menu a:hover, /* Survol de la souris */
+.li-menu a:focus { /* Focus au clavier */
+    color: #671519; font-size: 150%;
+}
+
+  /* Couleur utilisée pour le lien actif (celui qui est affiché sur la page) */
+
+  nav.menuFooter {
+      display: flex;
+      justify-content: center;
+  }

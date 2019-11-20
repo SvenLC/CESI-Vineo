@@ -5,6 +5,7 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom';
 
 import styles from './Home.module.css';
+import Footer from '../Footer/Footer';
 import schema from '../../assets/images/schema.jpg'
 import vineoRestaurateur01 from '../../assets/images/vineoRestaurateur01.jpg'
 import vineoRestaurateur02 from '../../assets/images/vineoRestaurateur02.jpg'
@@ -48,14 +49,14 @@ class Home extends Component {
                     <div className={styles.accroche1}>
                         <h1>LE LIEN DU RESTAURATEUR AU PRODUCTEUR</h1>
                     </div>
-                    <div classNamee={styles.accroche2}>
+                    <div className={styles.accroche2}>
                         Professionnels de la restauration, achetez votre vin auprès des meilleurs producteurs,
                         et bénéficiez de conseils avisés d'experts.
                         Producteurs, vendez vos vins à votre convenance à un vaste réseau de restaurateurs.
                     </div>
                 </div>
                 <div className={styles.explication}>
-                    <img class={styles.schema} src={schema} />
+                    <img className={styles.schema} src={schema} />
                 </div>
                 <div className={styles.partenaires}>
                     Ils travaillent avec nous
@@ -108,6 +109,7 @@ class Home extends Component {
                         </div>
                     </div>
                 </div>
+                <Footer/>
             </div>
         )
     }
