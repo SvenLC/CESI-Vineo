@@ -12,7 +12,7 @@ class Producer extends Component {
     return (
       <Fragment>
         <Header />
-        <Navbar />
+
         <Footer />
       </Fragment>
     );

@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
-import logoVineo from '../../assets/images/icons/logoVineo.png'
+import logoVineo from '../../assets/images/logoVineo.png'
+import Navbar from '../Navbar/Navbar';
 
 class Header extends Component {
     constructor(props) {
@@ -21,22 +22,22 @@ class Header extends Component {
 
     render() {
         return (
-            <header className={styles.entete}>
-                <img src={logoVineo} />
-                <input className={styles.inputText} type="text" size={"35"} placeholder={"Recherche"} onChange={this.handleChange}></input>
-                <div className={styles.topRight}>
-                    <Link className={`${styles.bouton} ${styles.fav}`} to='/'>
-                        Favoris
-            </Link>
-
-                    <div className={`${styles.bouton} ${styles.cart}`}>Panier</div> 
-                    <div className={`${styles.bouton} ${styles.cont}`}>Contact</div>
-                    <div className={styles.compte}>
-                        <div className={`${styles.bouton} ${styles.log}`}>Connexion</div>
-                        <div className={`${styles.bouton} ${styles.log}`}>Inscription</div>
+            <div className={styles.hautdepage}>
+                <header className={styles.entete}>
+                    <img src={logoVineo} />
+                    <input className={styles.inputText} type={"text"} size={35} placeholder={"Recherche"} />
+                    <div className={styles.topRight}>
+                        <div className={styles.bouton + ' ' + styles.fav} >Favoris</div>
+                        <div className={styles.bouton + ' ' + styles.cart} >Panier</div>
+                        <div className={styles.bouton + ' ' + styles.cont} >Contact</div>
+                        <div className={styles.bouton + ' ' + styles.log}>Compte</div>
                     </div>
-                </div>
-            </header>
+                    
+                </header>
+                <Navbar/>
+            </div>
+            
+            
         )
     }
 }

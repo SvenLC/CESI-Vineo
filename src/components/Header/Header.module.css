@@ -1,8 +1,12 @@
+* { margin: 0; padding: 0;}
+
 .entete {
     /* background: #eee; */
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-right: 150px;
+    /* box-shadow: 0px 0px 3px #000; */
 }
 .topRight {
     display: flex;
@@ -17,24 +21,20 @@
 .bouton {
     display: block;
     padding: 1rem;
-    margin: 10px;
-    
     /* background: #aaa; */
 }
 
 .fav {
-    background: url("../../assets/images/icons/fav.svg") 10% 50% no-repeat;
-    text-decoration: none;
-    color: inherit;
+    background: url("../../assets/images/fav.svg") 10% 50% no-repeat;
 }
 .cart {
-    background: url("../../assets/images/icons/cart.svg") 10% 50% no-repeat;
+    background: url("../../assets/images/cart.svg") 10% 50% no-repeat;
 }
 .cont {
-    background: url("../../assets/images/icons/contact.svg") 10% 50% no-repeat;
+    background: url("../../assets/images/contact.svg") 10% 50% no-repeat;
 }
 .log {
-    background: url("../../assets/images/icons/arrow.svg") 10% 50% no-repeat;
+    background: url("../../assets/images/arrow.svg") 10% 50% no-repeat;
     transition: 0.5s; 
     background-position-x: 0px;
 }
@@ -51,8 +51,22 @@
 .fav:hover, .cart:hover, .cont:hover, .log:hover {
     box-shadow: 0px 0px 3px #000;
 }
-
-.fav, .cart, .cont {
-    background-size: 2rem;
-    line-height : 4rem;
+.content {
+    padding: 30px 0 0 0;
+    display: flex;
 }
+.compte {
+    position: absolute;
+    padding: 15px;
+    background: #fff;
+}
+.sousCompte {
+    line-height: 1.5rem;
+}
+
+.hautdepage {
+    background: url("../../assets/images/background.jpg") 0 30% no-repeat;
+    background-size: 100%;
+    padding-bottom: 50px;
+    box-shadow: 0px 0px 3px #000;
+  }

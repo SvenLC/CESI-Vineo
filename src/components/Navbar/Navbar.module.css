@@ -1,31 +1,38 @@
-.menu{
-    text-decoration: none;
+body { width:100%;}
+
+nav.menu {
+    /* on peut barrer le navbar */
+    border-bottom: 0px solid black;
+    background: #ffffff88;
+    padding: 20px 0;
+    box-shadow: 0px 0px 3px #000;
+}
+
+.menu a {
+    font-family: 'Cinzel', serif;
+    text-decoration: none; /* pour enlever le soulignement */
     border-radius: 10px;
-    padding: 5px 10px 5px 10px;
+    padding: 5px 10px 5px 10px; /* pour agrandir le font*/
     font-size: 1.2rem;
     color: black;
+    transition: 0.5s;
 }
 
-ul {
-    
+.menu a:hover, 
+.menu a:focus,
+.menu a.actif {
+color: #671519;
+border-top: 1px solid #671519;
+border-bottom: 1px solid #671519;
+}
+
+.menu ul {
     display: flex;
     justify-content: center;
+}
+
+.menu li {
+    float: left;
+    display: block; /* Liens deviennent des blocs + Retirer les puces */
     margin: 5px;
-}
-
-li {
-    list-style: none;
-    
-}
-
-.child {
-    text-decoration: none;
-    color: inherit;
-    padding: 5px;
-}
-
-li :hover {
-    color: rgb(24, 23, 22);
-    background-color: #CDAE7F;
-    border-radius: 10px;
 }
