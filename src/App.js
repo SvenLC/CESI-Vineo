@@ -13,6 +13,10 @@ class App extends Component {
         <Route path='/' exact component={Home}/>
         {/* <Route path='/Producer' /> */}
         <Route path='/Customer' component={Customer}/>
+        <Route path='/Rouge' component={Customer}/>
+        <Route path='/Rose' component={Customer}/>
+        <Route path='/Blanc' component={Customer}/>
+        <Route path='/Champagne' component={Customer}/>
       </Switch>
     );
   }

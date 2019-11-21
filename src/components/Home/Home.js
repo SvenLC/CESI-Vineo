@@ -1,20 +1,20 @@
-import React, { Component, Fragment } from 'react'
-
-import styles from './Home.module.css';
+import React, { Component, Fragment } from 'react';
+import schema from '../../assets/images/schema.jpg';
+import vineoProducteur01 from '../../assets/images/vineoProducteur01.jpg';
+import vineoProducteur02 from '../../assets/images/vineoProducteur02.jpg';
+import vineoRestaurateur01 from '../../assets/images/vineoRestaurateur01.jpg';
+import vineoRestaurateur02 from '../../assets/images/vineoRestaurateur02.jpg';
 import Footer from '../Footer/Footer';
-import Header from './HomeHeader/HomeHeader';
-import schema from '../../assets/images/schema.jpg'
-import vineoRestaurateur01 from '../../assets/images/vineoRestaurateur01.jpg'
-import vineoRestaurateur02 from '../../assets/images/vineoRestaurateur02.jpg'
-import vineoProducteur01 from '../../assets/images/vineoProducteur01.jpg'
-import vineoProducteur02 from '../../assets/images/vineoProducteur02.jpg'
+import styles from './Home.module.css';
+import HomeHeader from './HomeHeader/HomeHeader';
+
 
 
 class Home extends Component {
     render() {
         return (
             <Fragment>
-                <Header />
+                <HomeHeader />
                 <div className={styles.article}>
                     <div className={styles.accroche}>
                         <div className={styles.accroche1}>

@@ -3,74 +3,39 @@ import React, { Component } from 'react';
 import styles from './Products.module.css';
 import ProductCard from './Product/ProductCard';
 import { blanc, rouge, rose, champ } from '../../assets/images';
-
-
-const wines = {
-    red: {
-        name: 'Château de Fonbel 2010',
-        type: 'rouge',
-        region: 'Bordeaux',
-        label: 'Saint-Emilion',
-        price: '22,50',
-        img: rouge
-    },
-    pink: {
-        name: 'Château Cro Magnon 1238',
-        type: 'rose',
-        region: 'Vin Rosé',
-        label: 'Lascaux',
-        price: '1022,50',
-        img: rose
-    },
-    white: {
-        name: 'Chablis Grand Cru 1988',
-        type: 'blanc',
-        region: 'Les Clos',
-        label: 'Tur De Jardin',
-        price: '8,50',
-        img: blanc
-    },
-    champagne: {
-        name: 'Château de Blindax 2010',
-        type: 'champagne',
-        region: 'Champagne',
-        label: 'Cherros',
-        price: '25 087,73',
-        img: champ
-    }
-}
+import wines from '../../shared/Wines';
 
 class Products extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            wines: wines,
+            type: ['Rouge', 'Rose']
+        };
+    }
+
     render() {
+        let filterWine = []
+        let wineList = []
+        if (window.location.pathname != '/customer') {
+            filterWine = this.state.wines.filter(wine =>
+                window.location.pathname.replace('/', '') == wine.type.toLowerCase()
+            )
+
+        }
+        else {
+            filterWine = this.state.wines;
+        }
+
+        filterWine.forEach(wine => {
+            wineList.push(<ProductCard wine={wine} key={wine.id} />)
+        });
+
+
+
         return (
             <div className={styles.grid}>
-                <ul className={styles.list}>
-                    <li>
-                        <ProductCard wine={wines.red} />
-                        <ProductCard wine={wines.pink} />
-                        <ProductCard wine={wines.white} />
-                        <ProductCard wine={wines.champagne} />
-                    </li>
-                    <li>
-                        <ProductCard wine={wines.red} />
-                        <ProductCard wine={wines.pink} />
-                        <ProductCard wine={wines.white} />
-                        <ProductCard wine={wines.champagne} />
-                    </li>
-                    <li>
-                        <ProductCard wine={wines.red} />
-                        <ProductCard wine={wines.pink} />
-                        <ProductCard wine={wines.white} />
-                        <ProductCard wine={wines.champagne} />
-                    </li>
-                    <li>
-                        <ProductCard wine={wines.red} />
-                        <ProductCard wine={wines.pink} />
-                        <ProductCard wine={wines.white} />
-                        <ProductCard wine={wines.champagne} />
-                    </li>
-                </ul>
-
+                {wineList}
             </div>
 
 

@@ -1,9 +1,9 @@
 import React, { Component } from 'react';
-
-import styles from './HomeHeader.module.css';
-import logoVineo from '../../../assets/images/logoVineo.png';
-import Modal from '../../UI/Modal/Modal';
 import Login from '../../Login/Login';
+import Logo from '../../UI/Logo/Logo';
+import Modal from '../../UI/Modal/Modal';
+import styles from './HomeHeader.module.css';
+
 
 class HomeHeader extends Component {
 
@@ -38,7 +38,7 @@ class HomeHeader extends Component {
             <div className={styles.hautdepage}>
                 <div className={'${styles.hautdepage} ${styles.accueil}'}>
                     <header className={styles.homeEntete}>
-                        <img className={styles.log} src={logoVineo} />
+                        <Logo/>
                         <div className={styles.topRight}>
                             <button className={styles.bouton}>Contact</button>
                             <button className={styles.bouton} onClick={this.openModal}>Connexion</button>

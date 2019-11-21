@@ -2,7 +2,7 @@ import React, { Component } from 'react';
 
 import styles from './Header.module.css';
 import { Link } from 'react-router-dom';
-import logoVineo from '../../assets/images/logoVineo.png'
+import Logo from '../UI/Logo/Logo';
 import Navbar from '../Navbar/Navbar';
 
 class Header extends Component {
@@ -24,7 +24,7 @@ class Header extends Component {
         return (
             <div className={styles.hautdepage}>
                 <header className={styles.entete}>
-                    <img src={logoVineo} />
+                    <Logo/>
                     <input className={styles.inputText} type={"text"} size={35} placeholder={"Recherche"} />
                     <div className={styles.topRight}>
                         <div className={styles.bouton + ' ' + styles.fav} >Favoris</div>

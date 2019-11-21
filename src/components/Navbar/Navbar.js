@@ -9,7 +9,7 @@ const navbar = (props) => (
     <nav className={styles.menu}>
         <ul>
             <li><Link className={styles.child} to='/'>Accueil</Link></li>
-            <li><Link className={styles.child} to='/catalogue'>Catalogue</Link></li>
+            <li><Link className={styles.child} to='/customer'>Catalogue</Link></li>
             <li><Link className={styles.child} to='/rouge'>Rouge</Link></li>
             <li><Link className={styles.child} to='/blanc'>Blanc</Link></li>
             <li><Link className={styles.child} to='/rose'>Rosé</Link></li>
