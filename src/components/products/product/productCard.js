@@ -10,12 +10,11 @@ const style = {
 
 
 const productCard = (props) => {
-    console.log(props.wine.name)
     return (
         <Link style={style} to={`/customer/${props.wine.id}`} >
             <div className={styles.global}>
                 <div>
-                    <img className={styles.picture} src={props.wine.img} />
+                    <img className={styles.picture} src={props.wine.img} alt="vin" />
                 </div>
                 <div className={styles.chateauDomaine}>{props.wine.name}</div>
                 <div>

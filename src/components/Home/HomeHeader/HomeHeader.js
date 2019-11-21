@@ -18,9 +18,7 @@ class HomeHeader extends Component {
         };
     }
 
-
     openModal = () => {
-        console.log('toto');
         this.setState({ modal: true })
     }
 
@@ -28,15 +26,10 @@ class HomeHeader extends Component {
         this.setState({ modal: false })
     }
 
-    connection = (user) => {
-        console.log(user + 'toto')
-    }
-
-
     render() {
         return (
             <div className={styles.hautdepage}>
-                <div className={'${styles.hautdepage} ${styles.accueil}'}>
+                <div className={`${styles.hautdepage} ${styles.accueil}`}>
                     <header className={styles.homeEntete}>
                         <Logo/>
                         <div className={styles.topRight}>

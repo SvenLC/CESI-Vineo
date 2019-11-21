@@ -1,9 +1,8 @@
 import React, { Component } from 'react';
-
-import styles from './Header.module.css';
-import { Link } from 'react-router-dom';
-import Logo from '../UI/Logo/Logo';
 import Navbar from '../Navbar/Navbar';
+import Logo from '../UI/Logo/Logo';
+import styles from './Header.module.css';
+
 
 class Header extends Component {
     constructor(props) {
@@ -24,7 +23,7 @@ class Header extends Component {
         return (
             <div className={styles.hautdepage}>
                 <header className={styles.entete}>
-                    <Logo/>
+                    <Logo />
                     <input className={styles.inputText} type={"text"} size={35} placeholder={"Recherche"} />
                     <div className={styles.topRight}>
                         <div className={styles.bouton + ' ' + styles.fav} >Favoris</div>
@@ -32,12 +31,12 @@ class Header extends Component {
                         <div className={styles.bouton + ' ' + styles.cont} >Contact</div>
                         <div className={styles.bouton + ' ' + styles.log}>Compte</div>
                     </div>
-                    
+
                 </header>
-                <Navbar/>
+                <Navbar />
             </div>
-            
-            
+
+
         )
     }
 }

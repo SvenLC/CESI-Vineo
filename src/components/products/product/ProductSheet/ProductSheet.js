@@ -7,11 +7,10 @@ const productSheet = (props) => {
     const wine = wines[props.wineId - 1];
     const option = [];
     for (let index = 1; index < 51; index++) {
-        option.push(<option value={index}>x {index}</option>)
+        option.push(<option value={index} key={index}>x {index}</option>)
     }
 
     return (
-
         <div className={styles.fiche}>
             <div className={styles.enteteProduit}>
                 <div className={styles.titreProduit}>
@@ -24,7 +23,7 @@ const productSheet = (props) => {
             </div>
             <div className={styles.corpsProduit}>
                 <div className={styles.photoProduit}>
-                    <img src={wine.img} />
+                    <img src={wine.img} alt="vin" />
                 </div>
                 <div className={styles.infosProduit}>
                     <div className={styles.commandeProduit}>

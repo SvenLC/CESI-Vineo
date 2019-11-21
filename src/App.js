@@ -9,9 +9,7 @@ class App extends Component {
   render() {
     return (
       <Switch>
-        {/* <h1>toto</h1> */}
-        <Route path='/' exact component={Home}/>
-        {/* <Route path='/Producer' /> */}
+        <Route path='/' exact component={Home}/>    
         <Route path='/Customer' component={Customer}/>
         <Route path='/Rouge' component={Customer}/>
         <Route path='/Rose' component={Customer}/>

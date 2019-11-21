@@ -14,7 +14,7 @@ const footer = (props) => {
             </div>
 
             <div>
-                <p><img className={styles.logo} src={logoVineoNeg} align={"center"} /></p>
+                <p><img className={styles.logo} src={logoVineoNeg} align={"center"} alt="logo"/></p>
             </div>
 
             <div>

@@ -6,7 +6,7 @@ import logoVineo from '../../../assets/images/logoDetour.png'
 
 const logo = (props) => {
     return (
-        <Link to='/'><img className={styles.log} src={logoVineo} /></Link>
+        <Link to='/'><img className={styles.log} src={logoVineo} alt="logo" /></Link>
 
     )
 }

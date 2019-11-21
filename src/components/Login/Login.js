@@ -27,10 +27,10 @@ class Login extends Component {
     }
 
     connection = () => {
-        if (this.state.login == 'producteur' && this.state.password == 'test') {
+        if (this.state.login === 'producteur' && this.state.password === 'test') {
             this.setState({ link: 'producer' })
         }
-        else if (this.state.login == 'client' && this.state.password == 'test') {
+        else if (this.state.login === 'client' && this.state.password === 'test') {
             this.setState({ link: 'customer' })
         }
         else {
@@ -40,10 +40,10 @@ class Login extends Component {
 
     render() {
         let error;
-        if (this.state.link == 'producer') {
+        if (this.state.link === 'producer') {
             return <Redirect to='/producer' />
         }
-        if (this.state.link == 'customer') {
+        if (this.state.link === 'customer') {
             return <Redirect to='/customer' />
         }
         if (this.state.link) {

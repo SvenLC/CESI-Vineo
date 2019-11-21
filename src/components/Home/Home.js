@@ -27,7 +27,7 @@ class Home extends Component {
                     </div>
                     </div>
                     <div className={styles.explication}>
-                        <img className={styles.schema} src={schema} />
+                        <img className={styles.schema} src={schema} alt="schema" />
                     </div>
                     <div className={styles.partenaires}>
                         Ils travaillent avec nous
@@ -38,11 +38,11 @@ class Home extends Component {
                                 <div>RESTAURATEURS</div>
                                 <div className={styles.blocPhotoPrenom}>
                                     <div className={styles.vertical}>
-                                        <img className={styles.portraits} src={vineoRestaurateur01} />
+                                        <img className={styles.portraits} src={vineoRestaurateur01} alt="Philippe" />
                                         Philippe
                                     </div>
                                     <div className={styles.vertical}>
-                                        <img className={styles.portraits} src={vineoRestaurateur02} />
+                                        <img className={styles.portraits} src={vineoRestaurateur02} alt="Gordon"/>
                                         Gordon
                                     </div>
                                 </div>
@@ -62,11 +62,11 @@ class Home extends Component {
                             <div>PRODUCTEURS</div>
                             <div className={styles.blocPhotoPrenom}>
                                 <div className={styles.vertical}>
-                                    <img className={styles.portraits} src={vineoProducteur01} />
+                                    <img className={styles.portraits} src={vineoProducteur01} alt="Gerard" />
                                     Gerard
                                 </div>
                                 <div className={styles.vertical}>
-                                    <img className={styles.portraits} src={vineoProducteur02} />
+                                    <img className={styles.portraits} src={vineoProducteur02} alt="Pierre" />
                                     Pierre
                                 </div>
                             </div>
