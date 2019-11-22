@@ -64,10 +64,8 @@
     text-align: center;
     font-weight: bold;
     color: #A4834F;
-
     box-shadow: 0 0 2px 2px gray;
     margin: 5px;
-  
 }
 
 /* "Producteurs" */
@@ -79,10 +77,10 @@
     text-align: center;
     font-weight: bold;
     color: #A4834F;
-
     box-shadow: 0 0 2px 2px gray;
     margin: 5px;
 }
+
 /* Espacement */
 
 .br {
@@ -109,7 +107,7 @@
 }
 
 .atouts {
-    padding:40px 0px;
+    padding: 40px 0px;
     text-align: center;
 }
 
@@ -117,40 +115,6 @@
     clear: both;
 }
 
-/* FORMULAIRE */
-
-.container {
-    clear: both;
-    padding: 10px 10px 10px 30px ;
-    height: 325px;
-    width: 300px;
-    background-color: black;
-    color: white;
-    margin : auto;
-    
-}
-
-.crumbs ol {
-    list-style-type: none;
-    padding-left: 0;
-}
-
-.container input {
-    margin: 5px;
-    padding: 10px 10px 10px 10px ;
-}
-
 h2 {
     font-size: 1.2rem;
-}
-
-.button {
-   
-    margin:10px 40px 10px 30px ;
-    float : right;
-    height: 30px;
-    /*width: 30px;*/
-    background-color: #CDAE7F;
-    text-align: center;
-   
 }

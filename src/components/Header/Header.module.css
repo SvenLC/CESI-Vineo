@@ -37,6 +37,7 @@
 
 .cont {
     background: url("../../assets/images/contact.svg") 10% 50% no-repeat;
+    text-decoration: none;
 }
 
 .log {
@@ -84,3 +85,9 @@
 .accueil {
     height: 100%;
 }
+
+.link {
+    text-decoration: none;
+    color: inherit;
+}
+

@@ -1,0 +1,48 @@
+.container {
+    text-align: center;
+    margin-top: 4rem;
+}
+
+.container input {
+    margin: 5px;
+    padding: 10px 10px 10px 10px;
+    width: 400px;
+}
+
+.container .inputMessage {
+    height: 125px;
+}
+
+.container .textCom {
+    margin-top: 15px;
+}
+
+.container .image {
+    height: 50px;
+    width: 50px;
+    margin: 30px 10px 30px 10px;
+}
+
+.container h2 {
+    font-size: 1.2rem;
+}
+
+.button {
+    margin: 10px 25px 10px 10px;
+     height: 30px;
+    width: 60px;
+    background-color: #CDAE7F;
+    text-align: center;
+    box-shadow: 0 0 2px 2px gray;
+}
+
+.contactForm {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.formBlock{
+    margin-top: 2rem;
+}

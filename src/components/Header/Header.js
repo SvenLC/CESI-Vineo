@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import Navbar from '../Navbar/Navbar';
 import Logo from '../UI/Logo/Logo';
 import styles from './Header.module.css';
@@ -28,7 +29,8 @@ class Header extends Component {
                     <div className={styles.topRight}>
                         <div className={styles.bouton + ' ' + styles.fav} >Favoris</div>
                         <div className={styles.bouton + ' ' + styles.cart} >Panier</div>
-                        <div className={styles.bouton + ' ' + styles.cont} >Contact</div>
+                        <Link className={styles.link} to='/contact'><div className={styles.bouton + ' ' + styles.cont} >Contact</div></Link>
+
                         <div className={styles.bouton + ' ' + styles.log}>Compte</div>
                     </div>
 

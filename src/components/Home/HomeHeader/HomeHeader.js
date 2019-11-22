@@ -33,7 +33,7 @@ class HomeHeader extends Component {
                     <header className={styles.homeEntete}>
                         <Logo/>
                         <div className={styles.topRight}>
-                            <button className={styles.bouton}>Contact</button>
+                            {/* <button className={styles.bouton}>Contact</button> */}
                             <button className={styles.bouton} onClick={this.openModal}>Connexion</button>
                             <Modal show={this.state.modal} modalClosed={this.cancelLogin}>
                                 <Login />
