@@ -31,9 +31,8 @@ class HomeHeader extends Component {
             <div className={styles.hautdepage}>
                 <div className={`${styles.hautdepage} ${styles.accueil}`}>
                     <header className={styles.homeEntete}>
-                        <Logo/>
+                        <Logo />
                         <div className={styles.topRight}>
-                            {/* <button className={styles.bouton}>Contact</button> */}
                             <button className={styles.bouton} onClick={this.openModal}>Connexion</button>
                             <Modal show={this.state.modal} modalClosed={this.cancelLogin}>
                                 <Login />

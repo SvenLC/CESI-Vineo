@@ -14,7 +14,7 @@ class Customer extends Component {
     }
     let screen = <Products />
     if (id) {
-      screen = <ProductSheet wineId={id}/>
+      screen = <ProductSheet wineId={id} />
     }
     return (
       <Fragment>
