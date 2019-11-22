@@ -25,6 +25,7 @@ class Header extends Component {
             <div className={styles.hautdepage}>
                 <header className={styles.entete}>
                     <Logo />
+                    <h1>TOTO</h1>
                     <input className={styles.inputText} type={"text"} size={35} placeholder={"Recherche"} />
                     <div className={styles.topRight}>
                         <div className={styles.bouton + ' ' + styles.fav} >Favoris</div>
