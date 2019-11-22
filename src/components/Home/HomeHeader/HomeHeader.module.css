@@ -43,8 +43,9 @@
 button {
     background: none;
 	color: inherit;
-	border: none;
-	padding: 0;
+    border: none;
+    margin-top: 2rem;
+	margin-right: 5rem;
 	font: inherit;
 	cursor: pointer;
     outline: inherit;
@@ -53,13 +54,14 @@ button {
 
 .bouton {
     text-decoration: none;
+    font-size: 1.5rem;
     display: block;
     height: 2rem;
     width: 7.5rem;
 
 }
 .bouton:hover {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
 
 }
 
